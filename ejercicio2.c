@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 int mult_ok(int x, int y) {
 	int p = x*y;
@@ -37,7 +38,7 @@ int64_t mult_ok64(int64_t a, int64_t b){
 
 
 int main(){
-	int64_t x = 10000000, y = 100000;
+	int64_t x = 1000000000000, y = 100000000000;
 	printf("%" PRId64 "\n",mult_ok64(x,y));
 
 }
